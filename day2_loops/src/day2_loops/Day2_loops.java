@@ -53,9 +53,9 @@ public class Day2_loops {
 //        } 
         String output = "";
         for (int i = 0; i < 4; i++) {
-            output = output + "*";
+            //output = output + "*";
             //skaitljiem
-            //output = output + (i+1);
+            output = output + "*" + (i + 1);
             System.out.println(output);
         }
 
@@ -98,7 +98,6 @@ public class Day2_loops {
 
         Scanner sc = new Scanner(System.in);
 
-        
         int minMax = 0;
         for (int i = 0; i < 5; i++) {
             System.out.println("Ievadiet skaitli:");
@@ -123,5 +122,23 @@ public class Day2_loops {
 //
 //        }
 //        System.out.println(newInput);
+    }
+
+    public static void degree() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Ievadiet skaitli kuru kāpnāt:");
+        double number = sc.nextInt();
+        System.out.println("Ievadiet skaitli kurā pakāpē kāpināt:");
+        double number2 = sc.nextInt();
+        double sum = number;
+        // int i;
+        //double r = Math.pow(number, number2);
+
+        for (int i = 1; i < number2; i++) {
+            sum *= number;
+        }
+
+        System.out.println(sum);
+
     }
 }
