@@ -99,7 +99,8 @@ public class Day2_loops {
 
         Scanner sc = new Scanner(System.in);
 
-        int minMax = 0;
+        int minMax = Integer.MIN_VALUE;
+        
         for (int i = 0; i < 5; i++) {
             System.out.println("Ievadiet skaitli:");
             int number = sc.nextInt();
@@ -133,7 +134,7 @@ public class Day2_loops {
         double number2 = sc.nextInt();
         double sum = number;
         // int i;
-        //double r = Math.pow(number, number2);
+        //double sum = Math.pow(number, number2);
 
         for (int i = 1; i < number2; i++) {
             sum *= number;
